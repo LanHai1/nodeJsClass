@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/registered" method="POST">
+        <table>
+            <tr>
+                <td>请输入用户名</td>
+                <td>
+                    <input type="text" name='username' value="">
+                </td>
+            </tr>
+            <tr>
+                <td>请输入年龄</td>
+                <td>
+                    <input type="text" name='age' value="">
+                </td>
+            </tr>
+            <tr>
+                <td>请输入职业</td>
+                <td>
+                    <select name="job">
+                        <option value="1">老师</option>
+                        <option value="2">学生</option>
+                        <option value="3">程序员</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset" value="重置">
+                </td>
+                <td>
+                    <input type="submit" value="提交">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

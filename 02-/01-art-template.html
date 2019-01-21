@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./node_modules/art-template/lib/template-web.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<script type="text/template" id="tp2">
+    
+    我叫 {{ name }},
+    我今年 {{ age }} 岁,
+    我喜欢 {{each love}} {{ $value }} {{/each}}
+</script>
+<script>
+    var ret = template('tp2', {
+        name: '兰海',
+        age: 18,
+        love: ['a', 'b', 'c']
+    })
+    console.log(ret);
+</script>
+</html>

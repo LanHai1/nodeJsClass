@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <label for="">用户名</label>
+        <input type="text" value="{{ admin[0].name }}">
+    </div>
+    <div>
+        <label for="">年龄</label>
+        <input type="text" value="{{ admin[0].age }}">
+    </div>
+    <div>
+        <label for="">职业</label>
+        <select name="" id="">
+                <option value="{{job[0].id}}" selected>{{job[0].professional}}</option>           
+        </select>
+    </div>
+</body>
+
+</html>
