@@ -76,7 +76,7 @@ sudo npm install -g 模块
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | 不需要web容器，因为Node.js本身就是基于更底层的HTTP协议开始的，本身就一个HTTP服务器 | 需要web容器<!--Apache、IIS、Tomcat等-->                      |
 | node.exe 进程监听8080端口，接受用户请求，根据不同请求做出对应的处理，最后将处理后的结果返回给浏览器 | 监听8080端口，解析用户请求报文，读取成功后将文件内容响应给浏览器 |
-| ![nodeJs开发网站](https://github.com/LanHai1/nodeJsClass/blob/master/Node笔记Img/nodeJs开发网站.png) | ![传统PHP等开发网站](/Volumes/蓝海/前端/14.nodejs/nodeClass/Node笔记Img/传统PHP等开发网站.png) |
+| ![nodeJs开发网站](https://github.com/LanHai1/nodeJsClass/blob/master/Node笔记Img/nodeJs开发网站.png) | ![传统PHP等开发网站](https://github.com/LanHai1/nodeJsClass/blob/master/Node笔记Img/传统PHP等开发网站.png) |
 
 
 
@@ -141,7 +141,7 @@ console.log(foo); // hello nodeJs
 
 2. 打开终端，定位到脚本文件所属目录
 
-![image-20181218134114564](/Volumes/蓝海/前端/14.nodejs/nodeClass/Node笔记Img/image-20181218134114564.png)
+![image-20181218134114564](https://github.com/LanHai1/nodeJsClass/blob/master/Node笔记Img/image-20181218134114564.png)
 
 3. 输入 `node 文件名`执行对应文件
 
@@ -600,7 +600,7 @@ module.exports 和 exports 指向的是同一个对象。
 
 return module.exports. <!--建议使用 module.exports -->
 
-![exports or module.exports](/Volumes/蓝海/前端/14.nodejs/nodeClass/Node笔记Img/exports or module.exports.png)
+![exports or module.exports](https://github.com/LanHai1/nodeJsClass/blob/master/Node笔记Img/exports or module.exports.png)
 
 ##### 3.9.6.2. ip 地址 和 端口号
 
@@ -613,7 +613,7 @@ return module.exports. <!--建议使用 module.exports -->
 - 在计算机中有些默认的端口号，最好不要去使用
   - 例如: http 服务的 80 ...
 
-![ip地址 or 端口号](/Volumes/蓝海/前端/14.nodejs/nodeClass/Node笔记Img/ip地址和端口号.png)
+![ip地址 or 端口号](https://github.com/LanHai1/nodeJsClass/blob/master/Node笔记Img/ip地址和端口号.png)
 
 
 
@@ -764,11 +764,11 @@ package-lock.json(让安装速度变快，保存了项目中所依赖的所有�
 
 + 浏览器通过用户输入的地址(URL)构建HTTP请求报文
 
-![](/Volumes/蓝海/前端/14.nodejs/nodeClass/Node笔记Img/HTTP请求报文.png)
+![](https://github.com/LanHai1/nodeJsClass/blob/master/Node笔记Img/HTTP请求报文.png)
 
 + 浏览器发起DNS解析请求，将域名转换为IP地址
 
-  ![](/Volumes/蓝海/前端/14.nodejs/nodeClass/Node笔记Img/DNS解析.png)
+  ![](https://github.com/LanHai1/nodeJsClass/blob/master/Node笔记Img/DNS解析.png)
 
 + 浏览器将请求报文发送给服务器
 
@@ -776,7 +776,7 @@ package-lock.json(让安装速度变快，保存了项目中所依赖的所有�
 
 + 服务器处理用户请求，将处理的结果封装成HTTP响应报文
 
-  ![](/Volumes/蓝海/前端/14.nodejs/nodeClass/Node笔记Img/HTTP响应报文.png)
+  ![](https://github.com/LanHai1/nodeJsClass/blob/master/Node笔记Img/HTTP响应报文.png)
 
 + 服务器将HTTP响应报文发送给浏览器
 + 浏览器接受服务器响应的HTTP报文，并解析
@@ -785,7 +785,7 @@ package-lock.json(让安装速度变快，保存了项目中所依赖的所有�
 
 #### 3.13.2. HTTP请求报文和响应报文的格式(下图有注释)
 
-![](/Volumes/蓝海/前端/14.nodejs/nodeClass/Node笔记Img/HTTP请求报文和响应报文的格式.png)
+![](https://github.com/LanHai1/nodeJsClass/blob/master/Node笔记Img/HTTP请求报文和响应报文的格式.png)
 
 
 
@@ -824,7 +824,7 @@ package-lock.json(让安装速度变快，保存了项目中所依赖的所有�
 
 callback hell:回调地狱
 
-![](/Volumes/蓝海/前端/14.nodejs/nodeClass/Node笔记Img/回调地域.png)
+![](https://github.com/LanHai1/nodeJsClass/blob/master/Node笔记Img/回调地域.png)
 
 执行读取多个异步代码，执行顺序不会按照代码顺序来执行，取决于的是文件的大小　(异步不会等待 多线程 ) 
 
@@ -877,7 +877,7 @@ readTxtA.then((data) => {
 })
 ```
 
-![](/Volumes/蓝海/前端/14.nodejs/nodeClass/Node笔记Img/PromiseApi代码图示.png)
+![](https://github.com/LanHai1/nodeJsClass/blob/master/Node笔记Img/PromiseApi代码图示.png)
 
 #### 3.16.2. Promise 解决 callback-hell
 
@@ -930,7 +930,7 @@ readTxt(path.join(__dirname, 'data', 'a.txt'))
     // hello ccc
 ```
 
-![](/Volumes/蓝海/前端/14.nodejs/nodeClass/Node笔记Img/Promise解决callback-hell.png)
+![](https://github.com/LanHai1/nodeJsClass/blob/master/Node笔记Img/Promise解决callback-hell.png)
 
 #### 3.16.3. Promise 数据库操作 注册用户
 
