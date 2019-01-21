@@ -76,7 +76,7 @@ sudo npm install -g 模块
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | 不需要web容器，因为Node.js本身就是基于更底层的HTTP协议开始的，本身就一个HTTP服务器 | 需要web容器<!--Apache、IIS、Tomcat等-->                      |
 | node.exe 进程监听8080端口，接受用户请求，根据不同请求做出对应的处理，最后将处理后的结果返回给浏览器 | 监听8080端口，解析用户请求报文，读取成功后将文件内容响应给浏览器 |
-| ![nodeJs开发网站](/Volumes/蓝海/前端/14.nodejs/nodeClass/Node笔记Img/nodeJs开发网站.png) | ![传统PHP等开发网站](/Volumes/蓝海/前端/14.nodejs/nodeClass/Node笔记Img/传统PHP等开发网站.png) |
+| ![nodeJs开发网站](https://github.com/LanHai1/nodeJsClass/blob/master/Node笔记Img/nodeJs开发网站.png) | ![传统PHP等开发网站](/Volumes/蓝海/前端/14.nodejs/nodeClass/Node笔记Img/传统PHP等开发网站.png) |
 
 
 
